@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class Main {
 
-    private static Korpa korpa = new Korpa();
-    private static Supermarket supermarket = new Supermarket();
+    private static final Korpa korpa = new Korpa();
+    private static final Supermarket supermarket = new Supermarket();
 
     private static void unosArtikalaUMarket(){
         supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "1"));
@@ -64,7 +64,6 @@ public class Main {
                 ispisArtikala(supermarket.getArtikli());
                 System.out.println("Unesite kod artikla (unesite malo slovo \"c\" za odustajanje): ");
                 String kod = scanner.nextLine();
-                kod = scanner.nextLine();
                 if(!kod.equals("c")){
                     Artikl a = supermarket.izbaciArtiklSaKodom(kod);
                     if(a != null){
@@ -81,7 +80,6 @@ public class Main {
                 ispisArtikala(korpa.getArtikli());
                 System.out.println("Unesite kod artikla (unesite malo slovo \"c\" za odustajanje): ");
                 String kod = scanner.nextLine();
-                kod = scanner.nextLine();
                 if(!kod.equals("c")){
                     Artikl a = korpa.izbaciArtiklSaKodom(kod);
                     if(a != null){

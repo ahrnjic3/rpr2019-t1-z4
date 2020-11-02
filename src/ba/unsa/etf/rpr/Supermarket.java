@@ -19,16 +19,19 @@ public class Supermarket {
 
     public Artikl[] getArtikli() {
 
-        return  lista;
+        Artikl[] l1= new Artikl[br];
+        for (int i = 0; i < br; i++) {
+            l1[i]=new Artikl(lista[i]);
+        }
+        return  l1;
     }
 
     public Artikl izbaciArtiklSaKodom(String kod) {
-        Artikl a=null;
-        System.out.println("brojac je:" + br);
         boolean nadjen=false;
+        Artikl a=null;
         int indeks = 0;
-        for (Artikl c: lista)
-            {
+        for (int i = 0; i <br ; i++) {
+            Artikl c=lista[i];
             String b=c.getKod();
             if( b.equals(kod)){
                 nadjen=true;

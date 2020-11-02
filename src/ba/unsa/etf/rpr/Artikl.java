@@ -13,7 +13,7 @@ public class Artikl {
     public Artikl(Artikl a)
     {
         this.naziv = new String(a.getNaziv());
-        this.cijena = getCijena();
+        this.cijena = a.getCijena();
         this.kod = new String(a.getKod());
     }
     public int getCijena() {

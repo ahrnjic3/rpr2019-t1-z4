@@ -46,4 +46,8 @@ public class Supermarket {
         }
         return  a;
     }
+
+    public int getBr() {
+        return br;
+    }
 }

@@ -53,4 +53,8 @@ public class Korpa {
         }
         return  suma;
     }
+
+    public int getBr() {
+        return br;
+    }
 }
